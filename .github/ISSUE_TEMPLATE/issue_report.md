@@ -9,9 +9,7 @@ assignees: ''
 
 **Version of mod:** {Mod version}
 
-**Forge Version:** {Forge version. *Version number, not latest/rb*}
-
-**Logs:** {Link(s) to GitHub Gist with full latest.log and/or crash report}
+**Logs:** {Link(s) to latest.log and/or crash report}
 
 **Steps to Reproduce:**
  1. Do this
