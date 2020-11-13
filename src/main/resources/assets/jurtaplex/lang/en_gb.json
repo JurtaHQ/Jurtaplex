@@ -1,0 +1,12 @@
+{
+	"itemGroup.jurtaplex": "Jurtaplex",
+	
+	"item.jurtaplex.vanadinite": "Alternis Vanadinite",
+	"item.jurtaplex.zoisite": "Alternis Zoisite",
+	
+	"block.jurtaplex.basanite": "Basanite",
+	"block.jurtaplex.alternis_vanadinite_ore": "Alternis Vanadinite Ore",
+	"block.jurtaplex.vanadinite_block": "Vanadinite Block",
+	"block.jurtaplex.alternis_zoisite_ore": "Alternis Zoisite Ore",
+	"block.jurtaplex.zoisite_block": "Zoisite Block"
+}

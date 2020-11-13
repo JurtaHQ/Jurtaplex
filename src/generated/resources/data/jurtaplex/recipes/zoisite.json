@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "jurtaplex",
+  "ingredients": [
+    {
+      "item": "jurtaplex:zoisite_block"
+    }
+  ],
+  "result": {
+    "item": "jurtaplex:zoisite",
+    "count": 9
+  }
+}

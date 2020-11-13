@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "jurtaplex",
+  "ingredients": [
+    {
+      "item": "jurtaplex:vanadinite_block"
+    }
+  ],
+  "result": {
+    "item": "jurtaplex:vanadinite",
+    "count": 9
+  }
+}

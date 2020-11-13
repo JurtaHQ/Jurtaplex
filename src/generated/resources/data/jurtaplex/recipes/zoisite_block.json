@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "jurtaplex",
+  "pattern": [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
+  "key": {
+    "x": {
+      "item": "jurtaplex:zoisite"
+    }
+  },
+  "result": {
+    "item": "jurtaplex:zoisite_block"
+  }
+}

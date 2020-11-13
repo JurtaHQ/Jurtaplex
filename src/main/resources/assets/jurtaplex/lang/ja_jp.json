@@ -1,0 +1,12 @@
+{
+	"itemGroup.jurtaplex": "\u30B8\u30E5\u30EB\u30BF\u30D7\u30EC\u30C3\u30AF\u30B9",
+
+	"item.jurtaplex.vanadinite": "\u30A2\u30EB\u30C6\u30EB\u30CB\u30B9\u8910\u925B\u9271",
+	"item.jurtaplex.zoisite": "\u30A2\u30EB\u30C6\u30EB\u30CB\u30B9\u30BE\u30A4\u30B5\u30A4\u30C8",
+	
+	"block.jurtaplex.basanite": "\u30D0\u30B5\u30CA\u30A4\u30C8",
+	"block.jurtaplex.alternis_vanadinite_ore": "\u30A2\u30EB\u30C6\u30EB\u30CB\u30B9\u8910\u925B\u9271\u9271\u77F3",
+	"block.jurtaplex.vanadinite_block": "\u8910\u925B\u9271\u30D6\u30ED\u30C3\u30AF",
+	"block.jurtaplex.alternis_zoisite_ore": "\u30A2\u30EB\u30C6\u30EB\u30CB\u30B9\u30BE\u30A4\u30B5\u30A4\u30C8\u9271\u77F3",
+	"block.jurtaplex.zoisite_block": "\u30BE\u30A4\u30B5\u30A4\u30C8\u30D6\u30ED\u30C3\u30AF"
+}

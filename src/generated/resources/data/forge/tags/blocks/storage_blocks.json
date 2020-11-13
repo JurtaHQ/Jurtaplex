@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:storage_blocks/vanadinite",
+    "#forge:storage_blocks/zoisite"
+  ]
+}
