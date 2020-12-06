@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "diopside_leggings",
+  "pattern": [
+    "xxx",
+    "x x",
+    "x x"
+  ],
+  "key": {
+    "x": {
+      "item": "jurtaplex:diopside"
+    }
+  },
+  "result": {
+    "item": "jurtaplex:diopside_leggings"
+  }
+}

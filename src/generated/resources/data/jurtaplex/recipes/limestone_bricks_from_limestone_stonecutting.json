@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "jurtaplex:limestone"
+  },
+  "result": "jurtaplex:limestone_bricks",
+  "count": 1
+}

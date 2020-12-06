@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "garnet",
+  "ingredients": [
+    {
+      "item": "jurtaplex:garnet_block"
+    }
+  ],
+  "result": {
+    "item": "jurtaplex:garnet",
+    "count": 9
+  }
+}

@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
+    "#forge:gems/garnet",
+    "#forge:gems/amber",
+    "#forge:gems/aragonite",
+    "#forge:gems/diopside",
     "#forge:gems/vanadinite",
     "#forge:gems/zoisite"
   ]

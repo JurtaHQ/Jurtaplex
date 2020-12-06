@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "limestone_wall",
+  "pattern": [
+    "xxx",
+    "xxx"
+  ],
+  "key": {
+    "x": {
+      "item": "jurtaplex:limestone"
+    }
+  },
+  "result": {
+    "item": "jurtaplex:limestone_wall",
+    "count": 6
+  }
+}

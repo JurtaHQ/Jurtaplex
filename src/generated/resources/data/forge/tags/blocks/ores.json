@@ -1,6 +1,11 @@
 {
   "replace": false,
   "values": [
+    "#forge:ores/flint",
+    "#forge:ores/garnet",
+    "#forge:ores/amber",
+    "#forge:ores/aragonite",
+    "#forge:ores/diopside",
     "#forge:ores/vanadinite",
     "#forge:ores/zoisite"
   ]

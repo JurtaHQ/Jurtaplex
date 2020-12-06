@@ -1,6 +1,11 @@
 {
   "replace": false,
   "values": [
+    "#forge:storage_blocks/flint",
+    "#forge:storage_blocks/amber",
+    "#forge:storage_blocks/aragonite",
+    "#forge:storage_blocks/garnet",
+    "#forge:storage_blocks/diopside",
     "#forge:storage_blocks/vanadinite",
     "#forge:storage_blocks/zoisite"
   ]

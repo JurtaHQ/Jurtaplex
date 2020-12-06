@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "group": "jurtaplex",
+  "group": "zoisite",
   "ingredients": [
     {
       "item": "jurtaplex:zoisite_block"

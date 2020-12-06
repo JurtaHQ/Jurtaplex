@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "diopside_block",
+  "pattern": [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
+  "key": {
+    "x": {
+      "item": "jurtaplex:diopside"
+    }
+  },
+  "result": {
+    "item": "jurtaplex:diopside_block"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "jurtaplex:basanite_bricks"
+  },
+  "result": "jurtaplex:basanite_brick_slab",
+  "count": 2
+}

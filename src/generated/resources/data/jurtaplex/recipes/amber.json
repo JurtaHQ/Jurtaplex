@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "amber",
+  "ingredients": [
+    {
+      "item": "jurtaplex:amber_block"
+    }
+  ],
+  "result": {
+    "item": "jurtaplex:amber",
+    "count": 9
+  }
+}

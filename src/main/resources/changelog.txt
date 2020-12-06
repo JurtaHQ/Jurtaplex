@@ -1,0 +1,66 @@
+- 0.0.2 (Alpha) -
+
+Blocks
+- Added Basanite Stairs
+- Added Basanite Slab
+- Added Basanite Bricks
+- Added Basanite Brick Stairs
+- Added Basanite Brick Slab
+- Added Limestone
+- Added Limestone Stairs
+- Added Limestone Slab
+- Added Limestone Bricks
+- Added Limestone Brick Stairs
+- Added Limestone Brick Slab
+- Added Shale
+- Added Slate
+- Added Diopside Ore
+- Added Diopside Block
+- Added Flint Ore
+- Added Flint Block
+- Added Garnet Ore
+- Added Garnet Block
+- Added Aragonite Ore
+- Added Aragonite Block
+- Added Amber Ore
+- Added Amber Block
+
+Items
+- Added Diopside
+- Added Diopside Tools & Armour
+- Added Garnet
+- Added Aragonite
+- Added Amber
+
+World Gen
+- Limestone can now generate in the overworld
+- Flint Ore can now generate in dirt
+- Diopside Ore can now generate in endstone
+- Garnet Ore can now generate in sand
+- Aragonite Ore can now generate in limestone
+- Amber Ore can now generate in the overworld
+
+Languages
+- Improved Japanese translation
+
+Textures
+- Changed up some textures
+
+Sounds
+- Sounds added for Shale and Slate (it took me a really long time to implement the code to make the sounds works i have no more sanity left)
+
+- 0.0.1 (Alpha) -
+
+Blocks
+- Added Basanite
+- Added Vanadinite Ore
+- Added Vanadinite Block
+- Added Zoisite Ore
+- Added Zoisite Block
+
+Items
+- Added Vanadinite
+- Added Zoisite
+
+Languages
+- Added Japanese

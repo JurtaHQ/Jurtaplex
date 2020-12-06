@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "basanite_wall",
+  "pattern": [
+    "xxx",
+    "xxx"
+  ],
+  "key": {
+    "x": {
+      "item": "jurtaplex:basanite"
+    }
+  },
+  "result": {
+    "item": "jurtaplex:basanite_wall",
+    "count": 6
+  }
+}

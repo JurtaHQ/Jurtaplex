@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "diopside",
+  "ingredients": [
+    {
+      "item": "jurtaplex:diopside_block"
+    }
+  ],
+  "result": {
+    "item": "jurtaplex:diopside",
+    "count": 9
+  }
+}

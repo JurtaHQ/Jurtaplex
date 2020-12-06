@@ -1,0 +1,74 @@
+{
+	"block.shale.break": {
+		"subtitle": "subtitles.block.generic.break",
+		"sounds": [
+			"jurtaplex:block/shale/break1",
+			"jurtaplex:block/shale/break2",
+			"jurtaplex:block/shale/break3",
+			"jurtaplex:block/shale/break4",
+			"jurtaplex:block/shale/break5",
+			"jurtaplex:block/shale/break6"
+		]
+	},
+	"block.shale.fall": {
+		"sounds": [
+			"jurtaplex:block/shale/step1",
+			"jurtaplex:block/shale/step2",
+			"jurtaplex:block/shale/step3",
+			"jurtaplex:block/shale/step4",
+			"jurtaplex:block/shale/step5",
+			"jurtaplex:block/shale/step6"
+		]
+	},
+	"block.shale.hit": {
+		"subtitle": "subtitles.block.generic.hit",
+		"sounds": [
+			{
+				"name": "jurtaplex:block/shale/step1",
+				"volume": 0.55
+			},
+			{
+				"name": "jurtaplex:block/shale/step2",
+				"volume": 0.55
+			},
+			{
+				"name": "jurtaplex:block/shale/step3",
+				"volume": 0.55
+			},
+			{
+				"name": "jurtaplex:block/shale/step4",
+				"volume": 0.55
+			},
+			{
+				"name": "jurtaplex:block/shale/step5",
+				"volume": 0.55
+			},
+			{
+				"name": "jurtaplex:block/shale/step6",
+				"volume": 0.55
+			}
+		]
+	},
+	"block.shale.place": {
+		"subtitle": "subtitles.block.generic.place",
+		"sounds": [
+			"jurtaplex:block/shale/break1",
+			"jurtaplex:block/shale/break2",
+			"jurtaplex:block/shale/break3",
+			"jurtaplex:block/shale/break4",
+			"jurtaplex:block/shale/break5",
+			"jurtaplex:block/shale/break6"
+		]
+	},
+	"block.shale.step": {
+		"subtitle": "subtitles.block.generic.footsteps",
+		"sounds": [
+			"jurtaplex:block/shale/step1",
+			"jurtaplex:block/shale/step2",
+			"jurtaplex:block/shale/step3",
+			"jurtaplex:block/shale/step4",
+			"jurtaplex:block/shale/step5",
+			"jurtaplex:block/shale/step6"
+		]
+	}
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "basanite_slab",
+  "pattern": [
+    "xxx"
+  ],
+  "key": {
+    "x": {
+      "item": "jurtaplex:basanite"
+    }
+  },
+  "result": {
+    "item": "jurtaplex:basanite_slab",
+    "count": 6
+  }
+}

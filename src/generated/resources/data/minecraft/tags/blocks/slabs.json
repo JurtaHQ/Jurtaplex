@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "jurtaplex:limestone_slab",
+    "jurtaplex:limestone_brick_slab",
+    "jurtaplex:basanite_slab",
+    "jurtaplex:basanite_brick_slab"
+  ]
+}

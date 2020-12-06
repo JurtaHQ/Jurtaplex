@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "aragonite",
+  "ingredients": [
+    {
+      "item": "jurtaplex:aragonite_block"
+    }
+  ],
+  "result": {
+    "item": "jurtaplex:aragonite",
+    "count": 9
+  }
+}

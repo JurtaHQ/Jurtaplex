@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "side": "jurtaplex:block/basanite_bricks",
+    "bottom": "jurtaplex:block/basanite_bricks",
+    "top": "jurtaplex:block/basanite_bricks"
+  }
+}

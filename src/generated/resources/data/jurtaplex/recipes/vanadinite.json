@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "group": "jurtaplex",
+  "group": "vanadinite",
   "ingredients": [
     {
       "item": "jurtaplex:vanadinite_block"
