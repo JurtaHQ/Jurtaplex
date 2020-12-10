@@ -8,12 +8,16 @@ assignees: ''
 ---
 
 **Version of mod:** {Mod version}
+**Version of forge:** {Forge version}
+**Optifine installed:** {Y/N}
 
 **Logs:** {Link(s) to latest.log and/or crash report}
+
+**Description:**
 
 **Steps to Reproduce:**
  1. Do this
  2. Then do that
  3. ...
 
-**Description of issue:**
+**Images:** {Attach images here...}
