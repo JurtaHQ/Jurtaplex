@@ -7,17 +7,20 @@ assignees: ''
 
 ---
 
-**Version of mod:** {Mod version}
-**Version of forge:** {Forge version}
-**Optifine installed:** {Y/N}
+## Versions
+**Jurtaplex:** {Mod version}\
+**Forge:** {Forge version}\
+**Optifine installed?** {Y/N}
 
-**Logs:** {Link(s) to latest.log and/or crash report}
+## Logs
+{Link(s) to latest.log and/or crash report}
 
-**Description:**
+# Description
 
-**Steps to Reproduce:**
+## Steps to Reproduce
  1. Do this
  2. Then do that
  3. ...
 
-**Images:** {Attach images here...}
+## Images
+{Attach images here...}
