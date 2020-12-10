@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "slate_bricks",
+  "pattern": [
+    "xx",
+    "xx"
+  ],
+  "key": {
+    "x": {
+      "item": "jurtaplex:slate"
+    }
+  },
+  "result": {
+    "item": "jurtaplex:slate_bricks",
+    "count": 4
+  }
+}

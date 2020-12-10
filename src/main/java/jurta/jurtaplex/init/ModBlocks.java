@@ -61,6 +61,8 @@ public class ModBlocks {
 			new Block(AbstractBlock.Properties.from(LIMESTONE.get())));
 	public static final RegistryObject<Block> BASANITE_BRICKS = register("basanite_bricks", () ->
 			new Block(AbstractBlock.Properties.from(BASANITE.get())));
+	public static final RegistryObject<Block> SLATE_BRICKS = register("slate_bricks", () ->
+			new Block(AbstractBlock.Properties.from(SLATE.get())));
 	//Slabs
 	public static final RegistryObject<Block> LIMESTONE_SLAB = register("limestone_slab", () ->
 			new SlabBlock(AbstractBlock.Properties.from(LIMESTONE.get())));

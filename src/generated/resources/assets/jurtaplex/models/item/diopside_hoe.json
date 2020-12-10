@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/handheld",
-  "textures": {
-    "layer0": "jurtaplex:item/diopside_hoe"
-  }
-}

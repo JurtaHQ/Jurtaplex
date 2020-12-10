@@ -27,6 +27,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 		wallBlock((WallBlock) ModBlocks.LIMESTONE_BRICK_WALL.get(), modLoc("block/limestone_bricks"));
 		simpleBlock(ModBlocks.SHALE.get());
 		simpleBlock(ModBlocks.SLATE.get());
+		simpleBlock(ModBlocks.SLATE_BRICKS.get());
 		simpleBlock(ModBlocks.BASANITE.get());
 		slabBlock((SlabBlock) ModBlocks.BASANITE_SLAB.get(), modLoc("block/basanite"), modLoc("block/basanite"));
 		stairsBlock((StairsBlock) ModBlocks.BASANITE_STAIRS.get(), modLoc("block/basanite"));
@@ -48,7 +49,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
 		simpleBlock(ModBlocks.ALTERNIS_VANADINITE_ORE.get());
 		simpleBlock(ModBlocks.VANADINITE_BLOCK.get());
 		simpleBlock(ModBlocks.ALTERNIS_ZOISITE_ORE.get());
-		simpleBlock(ModBlocks.ZOISITE_BLOCK.get());
+		simpleBlock(ModBlocks.ZOISITE_BLOCK.get());	
 	}
-
 }

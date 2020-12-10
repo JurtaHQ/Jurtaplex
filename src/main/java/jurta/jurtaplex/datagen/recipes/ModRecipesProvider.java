@@ -350,5 +350,15 @@ public class ModRecipesProvider extends RecipeProvider {
 	 	CookingRecipeBuilder.smeltingRecipe(Ingredient.fromItems(ModBlocks.SHALE.get().asItem()), ModBlocks.SLATE.get().asItem(), 0.1F, 200)
 	 			.addCriterion("has_item", hasItem(ModBlocks.SHALE.get()))
 	 			.build(consumer);
+	 	ShapedRecipeBuilder.shapedRecipe(ModBlocks.SLATE_BRICKS.get(), 4)
+	 			.patternLine("xx")
+	 			.patternLine("xx")
+	 			.key('x', ModBlocks.SLATE.get())
+	 			.setGroup("slate_bricks")
+	 			.addCriterion("has_item", hasItem(ModBlocks.SLATE.get()))
+	 			.build(consumer);
+	 	SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ModBlocks.SLATE.get()), ModBlocks.SLATE_BRICKS.get())
+	 			.addCriterion("has_item", hasItem(ModBlocks.SLATE.get()))
+	 			.build(consumer, Jurtaplex.MOD_ID + ":" + "slate_bricks_from_slate_stonecutting");
 	}
 }

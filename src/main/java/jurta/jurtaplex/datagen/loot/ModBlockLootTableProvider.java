@@ -27,6 +27,7 @@ public class ModBlockLootTableProvider extends BlockLootTables {
 		registerDropSelfLootTable(ModBlocks.LIMESTONE_BRICK_WALL.get());
 		registerDropSelfLootTable(ModBlocks.SHALE.get());
 		registerDropSelfLootTable(ModBlocks.SLATE.get());
+		registerDropSelfLootTable(ModBlocks.SLATE_BRICKS.get());
 		registerDropSelfLootTable(ModBlocks.BASANITE.get());
 		registerLootTable(ModBlocks.BASANITE_SLAB.get(), (basanite_slab) -> {
 			return droppingSlab(ModBlocks.BASANITE_SLAB.get());

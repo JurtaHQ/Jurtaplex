@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "jurtaplex:slate"
+  },
+  "result": "jurtaplex:slate_bricks",
+  "count": 1
+}

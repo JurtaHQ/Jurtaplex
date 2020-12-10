@@ -1,11 +1,16 @@
 package jurta.jurtaplex.datagen.client;
 
 import jurta.jurtaplex.Jurtaplex;
+import jurta.jurtaplex.init.ModBlocks;
+import jurta.jurtaplex.init.Registration;
+import net.minecraft.block.Block;
 import net.minecraft.data.DataGenerator;
+import net.minecraft.item.Items;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.fml.RegistryObject;
 
 public class ModItemModelProvider extends ItemModelProvider {
 
@@ -15,38 +20,9 @@ public class ModItemModelProvider extends ItemModelProvider {
 
 	@Override
 	protected void registerModels() {
-		withExistingParent("limestone", modLoc("block/limestone"));
-		withExistingParent("limestone_slab", modLoc("block/limestone_slab"));
-		withExistingParent("limestone_stairs", modLoc("block/limestone_stairs"));
-		wallInventory("limestone_wall", modLoc("block/limestone"));
-		withExistingParent("limestone_bricks", modLoc("block/limestone_bricks"));
-		withExistingParent("limestone_brick_slab", modLoc("block/limestone_brick_slab"));
-		withExistingParent("limestone_brick_stairs", modLoc("block/limestone_brick_stairs"));
-		wallInventory("limestone_brick_wall", modLoc("block/limestone_bricks"));
-		withExistingParent("shale", modLoc("block/shale"));
-		withExistingParent("slate", modLoc("block/slate"));
-		withExistingParent("basanite", modLoc("block/basanite"));
-		withExistingParent("basanite_slab", modLoc("block/basanite_slab"));
-		withExistingParent("basanite_stairs", modLoc("block/basanite_stairs"));
-		wallInventory("basanite_wall", modLoc("block/basanite"));
-		withExistingParent("basanite_bricks", modLoc("block/basanite_bricks"));
-		withExistingParent("basanite_brick_slab", modLoc("block/basanite_brick_slab"));
-		withExistingParent("basanite_brick_stairs", modLoc("block/basanite_brick_stairs"));
-		wallInventory("basanite_brick_wall", modLoc("block/basanite_bricks"));
-		withExistingParent("flint_ore", modLoc("block/flint_ore"));
-		withExistingParent("flint_block", modLoc("block/flint_block"));
-		withExistingParent("garnet_ore", modLoc("block/garnet_ore"));
-		withExistingParent("garnet_block", modLoc("block/garnet_block"));
-		withExistingParent("amber_ore", modLoc("block/amber_ore"));
-		withExistingParent("amber_block", modLoc("block/amber_block"));
-		withExistingParent("aragonite_ore", modLoc("block/aragonite_ore"));
-		withExistingParent("aragonite_block", modLoc("block/aragonite_block"));
-		withExistingParent("end_diopside_ore", modLoc("block/end_diopside_ore"));
-		withExistingParent("diopside_block", modLoc("block/diopside_block"));
-		withExistingParent("alternis_vanadinite_ore", modLoc("block/alternis_vanadinite_ore"));
-		withExistingParent("vanadinite_block", modLoc("block/vanadinite_block"));
-		withExistingParent("alternis_zoisite_ore", modLoc("block/alternis_zoisite_ore"));
-		withExistingParent("zoisite_block", modLoc("block/zoisite_block"));
+		Registration.BLOCKS.getEntries().stream()
+        .map(RegistryObject::get)
+        .forEach(this::blockItemModel);
 		
 		ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
 		ModelFile toolGenerated = getExistingFile(mcLoc("item/handheld"));
@@ -71,8 +47,23 @@ public class ModItemModelProvider extends ItemModelProvider {
 		builder(itemGenerated, "diopside_boots");
 	}
 	
-	private ItemModelBuilder builder(ModelFile itemGenerated, String name) {
-        return getBuilder(name).parent(itemGenerated).texture("layer0", "item/" + name);
+	private void blockItemModel(Block block) {
+		String name = block.getRegistryName().getPath();
+		if (block.asItem() != Items.AIR) {
+            withExistingParent(name, modLoc("block/" + name));
+        } else if (block == ModBlocks.BASANITE_BRICK_WALL.get()) {
+			wallInventory("basanite_brick_wall", modLoc("block/basanite_bricks"));
+		} else if (block == ModBlocks.BASANITE_WALL.get()) {
+			wallInventory("basanite_wall", modLoc("block/basanite"));
+		} else if (block == ModBlocks.LIMESTONE_BRICK_WALL.get()) {
+			wallInventory("limestone_brick_wall", modLoc("block/limestone_bricks"));
+		} else if (block == ModBlocks.LIMESTONE_WALL.get()) {
+			wallInventory("limestone_wall", modLoc("block/limestone"));
+		}
+	}
+	
+	private ItemModelBuilder builder(ModelFile model, String name) {
+        return getBuilder(name).parent(model).texture("layer0", modLoc("item/" + name));
     }
 
 }

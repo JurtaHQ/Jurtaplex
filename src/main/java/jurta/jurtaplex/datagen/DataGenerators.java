@@ -13,20 +13,21 @@ import net.minecraftforge.fml.event.lifecycle.GatherDataEvent;
 
 @Mod.EventBusSubscriber(modid = Jurtaplex.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public final class DataGenerators {
-	private DataGenerators() {}
-	
 	@SubscribeEvent
 	public static void gatherData(GatherDataEvent event) {
 		DataGenerator gen = event.getGenerator();
 		ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
-		
-		gen.addProvider(new ModBlockStateProvider(gen, existingFileHelper));
-		gen.addProvider(new ModItemModelProvider(gen, existingFileHelper));
-		gen.addProvider(new ModLootTableProvider(gen));
-		gen.addProvider(new ModRecipesProvider(gen));
-		
 		ModBlockTagsProvider blockTags = new ModBlockTagsProvider(gen, existingFileHelper);
-		gen.addProvider(blockTags);
-		gen.addProvider(new ModItemTagsProvider(gen, blockTags, existingFileHelper));
+
+		if (event.includeServer()) {
+			gen.addProvider(new ModLootTableProvider(gen));
+			gen.addProvider(new ModRecipesProvider(gen));
+			gen.addProvider(blockTags);
+			gen.addProvider(new ModItemTagsProvider(gen, blockTags, existingFileHelper));
+		}
+        if (event.includeClient()) {
+        	gen.addProvider(new ModBlockStateProvider(gen, existingFileHelper));
+    		gen.addProvider(new ModItemModelProvider(gen, existingFileHelper));
+		}
 	}
 }
