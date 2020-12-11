@@ -13,6 +13,7 @@ import net.minecraft.data.ShapedRecipeBuilder;
 import net.minecraft.data.ShapelessRecipeBuilder;
 import net.minecraft.data.SingleItemRecipeBuilder;
 import net.minecraft.item.Items;
+import net.minecraft.item.crafting.IRecipeSerializer;
 import net.minecraft.item.crafting.Ingredient;
 
 public class ModRecipesProvider extends RecipeProvider {
@@ -342,7 +343,7 @@ public class ModRecipesProvider extends RecipeProvider {
 				.addCriterion("has_item", hasItem(ModBlocks.LIMESTONE_BRICKS.get()))
 				.build(consumer, Jurtaplex.MOD_ID + ":" + "limestone_brick_slab_from_limestone_bricks_stonecutting");
 	 	SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ModBlocks.LIMESTONE_BRICKS.get()), ModBlocks.LIMESTONE_BRICK_STAIRS.get())
-				.addCriterion("has_item", hasItem(ModBlocks.BASANITE_BRICKS.get()))
+				.addCriterion("has_item", hasItem(ModBlocks.LIMESTONE_BRICKS.get()))
 				.build(consumer, Jurtaplex.MOD_ID + ":" + "limestone_brick_stairs_from_limestone_bricks_stonecutting");
 	 	SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ModBlocks.LIMESTONE_BRICKS.get()), ModBlocks.LIMESTONE_BRICK_WALL.get())
 	 			.addCriterion("has_item", hasItem(ModBlocks.LIMESTONE_BRICKS.get()))
@@ -360,5 +361,74 @@ public class ModRecipesProvider extends RecipeProvider {
 	 	SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ModBlocks.SLATE.get()), ModBlocks.SLATE_BRICKS.get())
 	 			.addCriterion("has_item", hasItem(ModBlocks.SLATE.get()))
 	 			.build(consumer, Jurtaplex.MOD_ID + ":" + "slate_bricks_from_slate_stonecutting");
+	 	SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ModBlocks.SLATE.get()), ModBlocks.SLATE_BRICK_SLAB.get(), 2)
+	 			.addCriterion("has_item", hasItem(ModBlocks.SLATE.get()))
+	 			.build(consumer, Jurtaplex.MOD_ID + ":" + "slate_brick_slab_from_slate_stonecutting");
+	 	SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ModBlocks.SLATE.get()), ModBlocks.SLATE_BRICK_STAIRS.get())
+				.addCriterion("has_item", hasItem(ModBlocks.SLATE.get()))
+				.build(consumer, Jurtaplex.MOD_ID + ":" + "slate_brick_stairs_from_slate_stonecutting");
+	 	SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ModBlocks.SLATE.get()), ModBlocks.SLATE_BRICK_WALL.get())
+	 			.addCriterion("has_item", hasItem(ModBlocks.SLATE.get()))
+	 			.build(consumer, Jurtaplex.MOD_ID + ":" + "slate_brick_wall_from_slate_stonecutting");
+	 	SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ModBlocks.SLATE_BRICKS.get()), ModBlocks.SLATE_BRICK_SLAB.get(), 2)
+	 			.addCriterion("has_item", hasItem(ModBlocks.SLATE_BRICKS.get()))
+	 			.build(consumer, Jurtaplex.MOD_ID + ":" + "slate_brick_slab_from_slate_bricks_stonecutting");
+	 	SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ModBlocks.SLATE_BRICKS.get()), ModBlocks.SLATE_BRICK_STAIRS.get())
+	 			.addCriterion("has_item", hasItem(ModBlocks.SLATE_BRICKS.get()))
+	 			.build(consumer, Jurtaplex.MOD_ID + ":" + "slate_brick_stairs_from_slate_bricks_stonecutting");
+	 	SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ModBlocks.SLATE_BRICKS.get()), ModBlocks.SLATE_BRICK_WALL.get())
+				.addCriterion("has_item", hasItem(ModBlocks.SLATE_BRICKS.get()))
+				.build(consumer, Jurtaplex.MOD_ID + ":" + "slate_brick_wall_from_slate_bricks_stonecutting");
+	 	ShapedRecipeBuilder.shapedRecipe(ModBlocks.SLATE_SLAB.get(), 6)
+	 			.patternLine("xxx")
+	 			.key('x', ModBlocks.SLATE.get())
+	 			.setGroup("slate_slab")
+	 			.addCriterion("has_item", hasItem(ModBlocks.SLATE.get()))
+	 			.build(consumer);
+	 	ShapedRecipeBuilder.shapedRecipe(ModBlocks.SLATE_BRICK_SLAB.get(), 6)
+	 			.patternLine("xxx")
+	 			.key('x', ModBlocks.SLATE_BRICKS.get())
+	 			.setGroup("slate_brick_slab")
+	 			.addCriterion("has_item", hasItem(ModBlocks.SLATE_BRICKS.get()))
+	 			.build(consumer);
+	 	ShapedRecipeBuilder.shapedRecipe(ModBlocks.SLATE_WALL.get(), 6)
+	 			.patternLine("xxx")
+	 			.patternLine("xxx")
+	 			.key('x', ModBlocks.SLATE.get())
+	 			.setGroup("slate_wall")
+	 			.addCriterion("has_item", hasItem(ModBlocks.SLATE.get()))
+	 			.build(consumer);
+	 	ShapedRecipeBuilder.shapedRecipe(ModBlocks.SLATE_BRICK_WALL.get(), 6)
+	 			.patternLine("xxx")
+	 			.patternLine("xxx")
+	 			.key('x', ModBlocks.SLATE_BRICKS.get())
+	 			.setGroup("slate_brick_wall")
+	 			.addCriterion("has_item", hasItem(ModBlocks.SLATE_BRICKS.get()))
+	 			.build(consumer);
+	 	ShapedRecipeBuilder.shapedRecipe(ModBlocks.SLATE_STAIRS.get(), 4)
+	 			.patternLine("x  ")
+	 			.patternLine("xx ")
+	 			.patternLine("xxx")
+	 			.key('x', ModBlocks.SLATE.get())
+	 			.setGroup("slate_stairs")
+	 			.addCriterion("has_item", hasItem(ModBlocks.SLATE.get()))
+	 			.build(consumer);
+	 	ShapedRecipeBuilder.shapedRecipe(ModBlocks.SLATE_BRICK_STAIRS.get(), 4)
+	 			.patternLine("x  ")
+	 			.patternLine("xx ")
+	 			.patternLine("xxx")
+	 			.key('x', ModBlocks.SLATE_BRICKS.get())
+	 			.setGroup("slate_brick_stairs")
+	 			.addCriterion("has_item", hasItem(ModBlocks.SLATE_BRICKS.get()))
+	 			.build(consumer);
+	 	CookingRecipeBuilder.smeltingRecipe(Ingredient.fromItems(Items.ROTTEN_FLESH), ModItems.COOKED_FLESH.get(), 0.1F, 200)
+				.addCriterion("has_item", hasItem(Items.ROTTEN_FLESH))
+				.build(consumer);
+	 	CookingRecipeBuilder.cookingRecipe(Ingredient.fromItems(Items.ROTTEN_FLESH), ModItems.COOKED_FLESH.get(), 0.35F, 100, IRecipeSerializer.SMOKING)
+	 			.addCriterion("has_item", hasItem(Items.ROTTEN_FLESH))
+	 			.build(consumer, Jurtaplex.MOD_ID + ":" + "cooked_flesh_from_smoking");
+	 	CookingRecipeBuilder.cookingRecipe(Ingredient.fromItems(Items.ROTTEN_FLESH), ModItems.COOKED_FLESH.get(), 0.35F, 600, IRecipeSerializer.CAMPFIRE_COOKING)
+				.addCriterion("has_item", hasItem(Items.ROTTEN_FLESH))
+				.build(consumer, Jurtaplex.MOD_ID + ":" + "cooked_flesh_from_campfire_cooking");
 	}
 }

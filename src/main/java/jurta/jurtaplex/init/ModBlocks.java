@@ -6,6 +6,7 @@ import jurta.jurtaplex.block.ModOreBlock;
 import jurta.jurtaplex.block.material.ModMaterial;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.StairsBlock;
@@ -72,6 +73,10 @@ public class ModBlocks {
 			new SlabBlock(AbstractBlock.Properties.from(BASANITE.get())));
 	public static final RegistryObject<Block> BASANITE_BRICK_SLAB = register("basanite_brick_slab", () ->
 			new SlabBlock(AbstractBlock.Properties.from(BASANITE.get())));
+	public static final RegistryObject<Block> SLATE_SLAB = register("slate_slab", () ->
+			new SlabBlock(AbstractBlock.Properties.from(SLATE.get())));
+	public static final RegistryObject<Block> SLATE_BRICK_SLAB = register("slate_brick_slab", () ->
+			new SlabBlock(AbstractBlock.Properties.from(SLATE.get())));
 	//Stairs
 	public static final RegistryObject<Block> LIMESTONE_STAIRS = register("limestone_stairs", () ->
 			new StairsBlock(() -> LIMESTONE.get().getDefaultState(), AbstractBlock.Properties.from(LIMESTONE.get())));
@@ -81,6 +86,10 @@ public class ModBlocks {
 			new StairsBlock(() -> BASANITE.get().getDefaultState(), AbstractBlock.Properties.from(BASANITE.get())));
 	public static final RegistryObject<Block> BASANITE_BRICK_STAIRS = register("basanite_brick_stairs", () ->
 			new StairsBlock(() -> BASANITE_BRICKS.get().getDefaultState(), AbstractBlock.Properties.from(BASANITE.get())));
+	public static final RegistryObject<Block> SLATE_STAIRS = register("slate_stairs", () ->
+			new StairsBlock(() -> SLATE.get().getDefaultState(), AbstractBlock.Properties.from(SLATE.get())));
+	public static final RegistryObject<Block> SLATE_BRICK_STAIRS = register("slate_brick_stairs", () ->
+			new StairsBlock(() -> SLATE_BRICKS.get().getDefaultState(), AbstractBlock.Properties.from(SLATE.get())));
 	//Walls
 	public static final RegistryObject<Block> LIMESTONE_WALL = register("limestone_wall", () ->
 			new WallBlock(AbstractBlock.Properties.from(LIMESTONE.get())));
@@ -90,6 +99,13 @@ public class ModBlocks {
 			new WallBlock(AbstractBlock.Properties.from(BASANITE.get())));
 	public static final RegistryObject<Block> BASANITE_BRICK_WALL = register("basanite_brick_wall", () ->
 			new WallBlock(AbstractBlock.Properties.from(BASANITE.get())));
+	public static final RegistryObject<Block> SLATE_WALL = register("slate_wall", () ->
+			new WallBlock(AbstractBlock.Properties.from(SLATE.get())));
+	public static final RegistryObject<Block> SLATE_BRICK_WALL = register("slate_brick_wall", () ->
+			new WallBlock(AbstractBlock.Properties.from(SLATE.get())));
+	//Debug Blocks
+	public static final RegistryObject<Block> PLACEHOLDER = registerNoItem("placeholder", () ->
+			new Block(AbstractBlock.Properties.from(Blocks.WHITE_WOOL)));
 	
 	static void register() {}
 	

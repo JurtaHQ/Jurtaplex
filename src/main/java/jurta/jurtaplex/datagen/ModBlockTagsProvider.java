@@ -42,9 +42,9 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
 		getOrCreateBuilder(Tags.Blocks.ORES).addTag(ModTags.Blocks.ORES_FLINT).addTag(ModTags.Blocks.ORES_GARNET).addTag(ModTags.Blocks.ORES_AMBER).addTag(ModTags.Blocks.ORES_ARAGONITE).addTag(ModTags.Blocks.ORES_DIOPSIDE).addTag(ModTags.Blocks.ORES_VANADINITE).addTag(ModTags.Blocks.ORES_ZOISITE);
 		getOrCreateBuilder(Tags.Blocks.STONE).add(ModBlocks.LIMESTONE.get()).add(ModBlocks.SHALE.get()).add(ModBlocks.SLATE.get());
 		getOrCreateBuilder(BlockTags.BASE_STONE_OVERWORLD).add(ModBlocks.LIMESTONE.get()).add(ModBlocks.SHALE.get());
-		getOrCreateBuilder(BlockTags.SLABS).add(ModBlocks.LIMESTONE_SLAB.get()).add(ModBlocks.LIMESTONE_BRICK_SLAB.get()).add(ModBlocks.BASANITE_SLAB.get()).add(ModBlocks.BASANITE_BRICK_SLAB.get());
-		getOrCreateBuilder(BlockTags.STAIRS).add(ModBlocks.LIMESTONE_STAIRS.get()).add(ModBlocks.LIMESTONE_BRICK_STAIRS.get()).add(ModBlocks.BASANITE_STAIRS.get()).add(ModBlocks.BASANITE_BRICK_STAIRS.get());
-		getOrCreateBuilder(BlockTags.WALLS).add(ModBlocks.LIMESTONE_WALL.get()).add(ModBlocks.LIMESTONE_BRICK_WALL.get()).add(ModBlocks.BASANITE_WALL.get()).add(ModBlocks.BASANITE_BRICK_WALL.get());
+		getOrCreateBuilder(BlockTags.SLABS).add(ModBlocks.LIMESTONE_SLAB.get()).add(ModBlocks.LIMESTONE_BRICK_SLAB.get()).add(ModBlocks.SLATE_SLAB.get()).add(ModBlocks.SLATE_BRICK_SLAB.get()).add(ModBlocks.BASANITE_SLAB.get()).add(ModBlocks.BASANITE_BRICK_SLAB.get());
+		getOrCreateBuilder(BlockTags.STAIRS).add(ModBlocks.LIMESTONE_STAIRS.get()).add(ModBlocks.LIMESTONE_BRICK_STAIRS.get()).add(ModBlocks.SLATE_STAIRS.get()).add(ModBlocks.SLATE_BRICK_STAIRS.get()).add(ModBlocks.BASANITE_STAIRS.get()).add(ModBlocks.BASANITE_BRICK_STAIRS.get());
+		getOrCreateBuilder(BlockTags.WALLS).add(ModBlocks.LIMESTONE_WALL.get()).add(ModBlocks.LIMESTONE_BRICK_WALL.get()).add(ModBlocks.SLATE_WALL.get()).add(ModBlocks.SLATE_BRICK_WALL.get()).add(ModBlocks.BASANITE_WALL.get()).add(ModBlocks.BASANITE_BRICK_WALL.get());
 	}
 	
 }

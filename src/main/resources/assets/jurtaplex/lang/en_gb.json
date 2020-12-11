@@ -1,6 +1,8 @@
 {
 	"itemGroup.jurtaplex": "Jurtaplex",
 	
+	"item.jurtaplex.cooked_flesh": "Cooked Flesh",
+	
 	"item.jurtaplex.garnet": "Garnet",
 	"item.jurtaplex.amber": "Amber",
 	"item.jurtaplex.aragonite": "Aragonite",
@@ -29,7 +31,13 @@
 	"block.jurtaplex.limestone_brick_wall": "Limestone Brick Wall",
 	"block.jurtaplex.shale": "Shale",
 	"block.jurtaplex.slate": "Slate",
+	"block.jurtaplex.slate_slab": "Slate Slab",
+	"block.jurtaplex.slate_stairs": "Slate Stairs",
+	"block.jurtaplex.slate_wall": "Slate Wall",
 	"block.jurtaplex.slate_bricks": "Slate Bricks",
+	"block.jurtaplex.slate_brick_slab": "Slate Brick Slab",
+	"block.jurtaplex.slate_brick_stairs": "Slate Brick Stairs",
+	"block.jurtaplex.slate_brick_wall": "Slate Brick Wall",
 	"block.jurtaplex.basanite": "Basanite",
 	"block.jurtaplex.basanite_slab": "Basanite Slab",
 	"block.jurtaplex.basanite_stairs": "Basanite Stairs",

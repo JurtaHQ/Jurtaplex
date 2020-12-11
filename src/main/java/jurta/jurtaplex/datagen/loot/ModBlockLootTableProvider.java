@@ -27,7 +27,17 @@ public class ModBlockLootTableProvider extends BlockLootTables {
 		registerDropSelfLootTable(ModBlocks.LIMESTONE_BRICK_WALL.get());
 		registerDropSelfLootTable(ModBlocks.SHALE.get());
 		registerDropSelfLootTable(ModBlocks.SLATE.get());
+		registerLootTable(ModBlocks.SLATE_SLAB.get(), (slate_slab) -> {
+			return droppingSlab(ModBlocks.SLATE_SLAB.get());
+		});
+		registerDropSelfLootTable(ModBlocks.SLATE_STAIRS.get());
+		registerDropSelfLootTable(ModBlocks.SLATE_WALL.get());
 		registerDropSelfLootTable(ModBlocks.SLATE_BRICKS.get());
+		registerLootTable(ModBlocks.SLATE_BRICK_SLAB.get(), (slate_brick_slab) -> {
+			return droppingSlab(ModBlocks.SLATE_BRICK_SLAB.get());
+		});
+		registerDropSelfLootTable(ModBlocks.SLATE_BRICK_STAIRS.get());
+		registerDropSelfLootTable(ModBlocks.SLATE_BRICK_WALL.get());
 		registerDropSelfLootTable(ModBlocks.BASANITE.get());
 		registerLootTable(ModBlocks.BASANITE_SLAB.get(), (basanite_slab) -> {
 			return droppingSlab(ModBlocks.BASANITE_SLAB.get());
@@ -68,6 +78,8 @@ public class ModBlockLootTableProvider extends BlockLootTables {
 		registerLootTable(ModBlocks.ALTERNIS_ZOISITE_ORE.get(), (zoisite) -> {
 			return droppingItemWithFortune(zoisite, ModItems.ZOISITE.get());
 		});
+		
+		registerDropSelfLootTable(ModBlocks.PLACEHOLDER.get());
 	}
 	
 	@Override

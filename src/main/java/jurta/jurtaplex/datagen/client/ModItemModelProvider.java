@@ -26,7 +26,11 @@ public class ModItemModelProvider extends ItemModelProvider {
 		withExistingParent("limestone_brick_stairs", modLoc("block/limestone_brick_stairs"));
 		withExistingParent("shale", modLoc("block/shale"));
 		withExistingParent("slate", modLoc("block/slate"));
+		withExistingParent("slate_slab", modLoc("block/slate_slab"));
+		withExistingParent("slate_stairs", modLoc("block/slate_stairs"));
 		withExistingParent("slate_bricks", modLoc("block/slate_bricks"));
+		withExistingParent("slate_brick_slab", modLoc("block/slate_brick_slab"));
+		withExistingParent("slate_brick_stairs", modLoc("block/slate_brick_stairs"));
 		withExistingParent("basanite", modLoc("block/basanite"));
 		withExistingParent("basanite_slab", modLoc("block/basanite_slab"));
 		withExistingParent("basanite_stairs", modLoc("block/basanite_stairs"));
@@ -48,15 +52,21 @@ public class ModItemModelProvider extends ItemModelProvider {
 		withExistingParent("alternis_zoisite_ore", modLoc("block/alternis_zoisite_ore"));
 		withExistingParent("zoisite_block", modLoc("block/zoisite_block"));
 		
+		withExistingParent("placeholder", modLoc("block/placeholder"));
+		
 		//Walls
 		blockWithInventoryModel(ModBlocks.BASANITE_BRICK_WALL.get());
 		blockWithInventoryModel(ModBlocks.BASANITE_WALL.get());
 		blockWithInventoryModel(ModBlocks.LIMESTONE_BRICK_WALL.get());
 		blockWithInventoryModel(ModBlocks.LIMESTONE_WALL.get());
+		blockWithInventoryModel(ModBlocks.SLATE_BRICK_WALL.get());
+		blockWithInventoryModel(ModBlocks.SLATE_WALL.get());
 		
 		ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
 		ModelFile toolGenerated = getExistingFile(mcLoc("item/handheld"));
 		
+		//Food
+		builder(itemGenerated, "cooked_flesh");
 		//Materials
 		builder(itemGenerated, "garnet");
 		builder(itemGenerated, "amber");

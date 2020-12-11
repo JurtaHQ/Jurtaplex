@@ -47,8 +47,8 @@ public class ModItemTagsProvider extends ItemTagsProvider {
 		getOrCreateBuilder(ModTags.Items.GEMS_ZOISITE).add(ModItems.ZOISITE.get());
 		
 		getOrCreateBuilder(Tags.Items.GEMS).addTag(ModTags.Items.GEMS_GARNET).addTag(ModTags.Items.GEMS_AMBER).addTag(ModTags.Items.GEMS_ARAGONITE).addTag(ModTags.Items.GEMS_DIOPSIDE).addTag(ModTags.Items.GEMS_VANADINITE).addTag(ModTags.Items.GEMS_ZOISITE);
-		getOrCreateBuilder(ItemTags.SLABS).add(ModBlocks.LIMESTONE_SLAB.get().asItem()).add(ModBlocks.LIMESTONE_BRICK_SLAB.get().asItem()).add(ModBlocks.BASANITE_SLAB.get().asItem()).add(ModBlocks.BASANITE_BRICK_SLAB.get().asItem());
-		getOrCreateBuilder(ItemTags.STAIRS).add(ModBlocks.LIMESTONE_STAIRS.get().asItem()).add(ModBlocks.LIMESTONE_BRICK_STAIRS.get().asItem()).add(ModBlocks.BASANITE_STAIRS.get().asItem()).add(ModBlocks.BASANITE_BRICK_STAIRS.get().asItem());
-		getOrCreateBuilder(ItemTags.WALLS).add(ModBlocks.LIMESTONE_WALL.get().asItem()).add(ModBlocks.LIMESTONE_BRICK_WALL.get().asItem()).add(ModBlocks.BASANITE_WALL.get().asItem()).add(ModBlocks.BASANITE_BRICK_WALL.get().asItem());
+		getOrCreateBuilder(ItemTags.SLABS).add(ModBlocks.LIMESTONE_SLAB.get().asItem()).add(ModBlocks.LIMESTONE_BRICK_SLAB.get().asItem()).add(ModBlocks.SLATE_SLAB.get().asItem()).add(ModBlocks.SLATE_BRICK_SLAB.get().asItem()).add(ModBlocks.BASANITE_SLAB.get().asItem()).add(ModBlocks.BASANITE_BRICK_SLAB.get().asItem());
+		getOrCreateBuilder(ItemTags.STAIRS).add(ModBlocks.LIMESTONE_STAIRS.get().asItem()).add(ModBlocks.LIMESTONE_BRICK_STAIRS.get().asItem()).add(ModBlocks.SLATE_STAIRS.get().asItem()).add(ModBlocks.SLATE_BRICK_STAIRS.get().asItem()).add(ModBlocks.BASANITE_STAIRS.get().asItem()).add(ModBlocks.BASANITE_BRICK_STAIRS.get().asItem());
+		getOrCreateBuilder(ItemTags.WALLS).add(ModBlocks.LIMESTONE_WALL.get().asItem()).add(ModBlocks.LIMESTONE_BRICK_WALL.get().asItem()).add(ModBlocks.SLATE_WALL.get().asItem()).add(ModBlocks.SLATE_BRICK_WALL.get().asItem()).add(ModBlocks.BASANITE_WALL.get().asItem()).add(ModBlocks.BASANITE_BRICK_WALL.get().asItem());
 	}
 }

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "slate_slab",
+  "pattern": [
+    "xxx"
+  ],
+  "key": {
+    "x": {
+      "item": "jurtaplex:slate"
+    }
+  },
+  "result": {
+    "item": "jurtaplex:slate_slab",
+    "count": 6
+  }
+}

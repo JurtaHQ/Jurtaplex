@@ -33,7 +33,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
 		wallBlock((WallBlock) ModBlocks.LIMESTONE_BRICK_WALL.get(), "limestone_bricks");
 		simpleBlock(ModBlocks.SHALE.get());
 		simpleBlock(ModBlocks.SLATE.get());
+		slabBlock((SlabBlock) ModBlocks.SLATE_SLAB.get(), modLoc("block/slate"), modLoc("block/slate"));
+		stairsBlock((StairsBlock) ModBlocks.SLATE_STAIRS.get(), modLoc("block/slate"));
+		wallBlock((WallBlock) ModBlocks.SLATE_WALL.get(), "slate");
 		simpleBlock(ModBlocks.SLATE_BRICKS.get());
+		slabBlock((SlabBlock) ModBlocks.SLATE_BRICK_SLAB.get(), modLoc("block/slate_bricks"), modLoc("block/slate_bricks"));
+		stairsBlock((StairsBlock) ModBlocks.SLATE_BRICK_STAIRS.get(), modLoc("block/slate_bricks"));
+		wallBlock((WallBlock) ModBlocks.SLATE_BRICK_WALL.get(), "slate_bricks");
 		simpleBlock(ModBlocks.BASANITE.get());
 		slabBlock((SlabBlock) ModBlocks.BASANITE_SLAB.get(), modLoc("block/basanite"), modLoc("block/basanite"));
 		stairsBlock((StairsBlock) ModBlocks.BASANITE_STAIRS.get(), modLoc("block/basanite"));
@@ -55,7 +61,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
 		simpleBlock(ModBlocks.ALTERNIS_VANADINITE_ORE.get());
 		simpleBlock(ModBlocks.VANADINITE_BLOCK.get());
 		simpleBlock(ModBlocks.ALTERNIS_ZOISITE_ORE.get());
-		simpleBlock(ModBlocks.ZOISITE_BLOCK.get());	
+		simpleBlock(ModBlocks.ZOISITE_BLOCK.get());
+		
+		simpleBlock(ModBlocks.PLACEHOLDER.get());
 	}
 	
 	private String name(Block block) {

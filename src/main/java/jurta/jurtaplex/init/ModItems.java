@@ -13,6 +13,9 @@ import net.minecraft.item.SwordItem;
 import net.minecraftforge.fml.RegistryObject;
 
 public class ModItems {
+	//Foods
+	public static final RegistryObject<Item> COOKED_FLESH = Registration.ITEMS.register("cooked_flesh", () ->
+			new Item(new Item.Properties().group(ModTabGroups.JURTAPLEX).food(ModFoods.COOKED_FLESH)));
 	//Materials
 	public static final RegistryObject<Item> GARNET = Registration.ITEMS.register("garnet", () ->
 			new Item(new Item.Properties().group(ModTabGroups.JURTAPLEX)));
