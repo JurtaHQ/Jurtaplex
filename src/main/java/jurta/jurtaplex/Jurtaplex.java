@@ -5,10 +5,17 @@ import java.util.stream.Collectors;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import jurta.jurtaplex.datagen.ModBlockTagsProvider;
+import jurta.jurtaplex.datagen.ModItemTagsProvider;
+import jurta.jurtaplex.datagen.client.ModBlockStateProvider;
+import jurta.jurtaplex.datagen.client.ModItemModelProvider;
+import jurta.jurtaplex.datagen.loot.ModLootTableProvider;
+import jurta.jurtaplex.datagen.recipes.ModRecipesProvider;
 import jurta.jurtaplex.init.ModBlocks;
 import jurta.jurtaplex.init.Registration;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.data.DataGenerator;
 import net.minecraft.util.RegistryKey;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.biome.Biome;
@@ -18,13 +25,16 @@ import net.minecraft.world.gen.feature.OreFeatureConfig;
 import net.minecraft.world.gen.feature.template.BlockMatchRuleTest;
 import net.minecraftforge.common.BiomeDictionary;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.GatherDataEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
@@ -38,14 +48,17 @@ public class Jurtaplex {
     private static final Logger LOGGER = LogManager.getLogger();
 
 	public Jurtaplex() {
+		IEventBus modBus = FMLJavaModLoadingContext.get().getModEventBus();
+		
 		// Register the setup method for modloading
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
+		modBus.addListener(this::setup);
+		modBus.addListener(this::gatherData);
         // Register the enqueueIMC method for modloading
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::enqueueIMC);
+		modBus.addListener(this::enqueueIMC);
         // Register the processIMC method for modloading
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::processIMC);
+		modBus.addListener(this::processIMC);
         // Register the doClientStuff method for modloading
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
+		modBus.addListener(this::doClientStuff);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -123,4 +136,21 @@ public class Jurtaplex {
                     .range(256).square().func_242731_b(5));
         }
     }
+    
+    private void gatherData(GatherDataEvent event) {
+		DataGenerator gen = event.getGenerator();
+		ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
+		ModBlockTagsProvider blockTags = new ModBlockTagsProvider(gen, existingFileHelper);
+		
+		if (event.includeClient()) {
+			ModBlockStateProvider blockstates = new ModBlockStateProvider(gen, existingFileHelper);
+        	gen.addProvider(blockstates);
+    		gen.addProvider(new ModItemModelProvider(gen, blockstates.getExistingHelper()));
+		} if (event.includeServer()) {
+			gen.addProvider(new ModLootTableProvider(gen));
+			gen.addProvider(new ModRecipesProvider(gen));
+			gen.addProvider(blockTags);
+			gen.addProvider(new ModItemTagsProvider(gen, blockTags, existingFileHelper));
+		}
+	}
 }
