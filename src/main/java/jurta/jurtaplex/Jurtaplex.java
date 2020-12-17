@@ -5,12 +5,12 @@ import java.util.stream.Collectors;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import jurta.jurtaplex.datagen.ModBlockTagsProvider;
-import jurta.jurtaplex.datagen.ModItemTagsProvider;
-import jurta.jurtaplex.datagen.client.ModBlockStateProvider;
-import jurta.jurtaplex.datagen.client.ModItemModelProvider;
-import jurta.jurtaplex.datagen.loot.ModLootTableProvider;
-import jurta.jurtaplex.datagen.recipes.ModRecipesProvider;
+import jurta.jurtaplex.data.ModBlockTagsProvider;
+import jurta.jurtaplex.data.ModItemTagsProvider;
+import jurta.jurtaplex.data.client.ModBlockStateProvider;
+import jurta.jurtaplex.data.client.ModItemModelProvider;
+import jurta.jurtaplex.data.loot.ModLootTableProvider;
+import jurta.jurtaplex.data.recipes.ModRecipesProvider;
 import jurta.jurtaplex.init.ModBlocks;
 import jurta.jurtaplex.init.Registration;
 import net.minecraft.block.Block;

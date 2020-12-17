@@ -1,4 +1,4 @@
-package jurta.jurtaplex.datagen.loot;
+package jurta.jurtaplex.data.loot;
 
 import java.util.stream.Collectors;
 

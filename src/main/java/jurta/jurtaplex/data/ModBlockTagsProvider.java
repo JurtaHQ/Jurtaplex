@@ -1,4 +1,4 @@
-package jurta.jurtaplex.datagen;
+package jurta.jurtaplex.data;
 
 import jurta.jurtaplex.Jurtaplex;
 import jurta.jurtaplex.init.ModBlocks;

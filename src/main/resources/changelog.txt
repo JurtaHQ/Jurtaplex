@@ -8,7 +8,12 @@ Blocks
 - Added Slate Brick Stairs
 - Added Slate Brick Slab
 - Added Slate Brick Wall
+Foods
+- Added Candy Apple
+- Added Caramel
 - Added Cooked Flesh
+Textures
+- Changed up some textures
 
 - 0.0.2 (Alpha) -
 

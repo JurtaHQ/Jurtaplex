@@ -1,4 +1,4 @@
-package jurta.jurtaplex.datagen.client;
+package jurta.jurtaplex.data.client;
 
 import jurta.jurtaplex.Jurtaplex;
 import jurta.jurtaplex.init.ModBlocks;
@@ -66,6 +66,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 		ModelFile toolGenerated = getExistingFile(mcLoc("item/handheld"));
 		
 		//Food
+		builder(toolGenerated, "candy_apple");
+		builder(itemGenerated, "caramel");
 		builder(itemGenerated, "cooked_flesh");
 		//Materials
 		builder(itemGenerated, "garnet");

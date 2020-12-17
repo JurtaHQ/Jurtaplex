@@ -1,4 +1,4 @@
-package jurta.jurtaplex.datagen.recipes;
+package jurta.jurtaplex.data.recipes;
 
 import java.util.function.Consumer;
 
@@ -421,7 +421,7 @@ public class ModRecipesProvider extends RecipeProvider {
 	 			.setGroup("slate_brick_stairs")
 	 			.addCriterion("has_item", hasItem(ModBlocks.SLATE_BRICKS.get()))
 	 			.build(consumer);
-	 	CookingRecipeBuilder.smeltingRecipe(Ingredient.fromItems(Items.ROTTEN_FLESH), ModItems.COOKED_FLESH.get(), 0.1F, 200)
+	 	CookingRecipeBuilder.smeltingRecipe(Ingredient.fromItems(Items.ROTTEN_FLESH), ModItems.COOKED_FLESH.get(), 0.35F, 200)
 				.addCriterion("has_item", hasItem(Items.ROTTEN_FLESH))
 				.build(consumer);
 	 	CookingRecipeBuilder.cookingRecipe(Ingredient.fromItems(Items.ROTTEN_FLESH), ModItems.COOKED_FLESH.get(), 0.35F, 100, IRecipeSerializer.SMOKING)
@@ -430,5 +430,21 @@ public class ModRecipesProvider extends RecipeProvider {
 	 	CookingRecipeBuilder.cookingRecipe(Ingredient.fromItems(Items.ROTTEN_FLESH), ModItems.COOKED_FLESH.get(), 0.35F, 600, IRecipeSerializer.CAMPFIRE_COOKING)
 				.addCriterion("has_item", hasItem(Items.ROTTEN_FLESH))
 				.build(consumer, Jurtaplex.MOD_ID + ":" + "cooked_flesh_from_campfire_cooking");
+	 	CookingRecipeBuilder.smeltingRecipe(Ingredient.fromItems(Items.SUGAR), ModItems.CARAMEL.get(), 0.1F, 200)
+	 			.addCriterion("has_item", hasItem(Items.SUGAR))
+	 			.build(consumer);
+	 	CookingRecipeBuilder.cookingRecipe(Ingredient.fromItems(Items.SUGAR), ModItems.CARAMEL.get(), 0.1F, 100, IRecipeSerializer.SMOKING)
+				.addCriterion("has_item", hasItem(Items.SUGAR))
+				.build(consumer, Jurtaplex.MOD_ID + ":" + "caramel_from_smoking");
+	 	ShapedRecipeBuilder.shapedRecipe(ModItems.CANDY_APPLE.get())
+	 			.patternLine("c")
+	 			.patternLine("x")
+	 			.patternLine("#")
+	 			.key('c', ModItems.CARAMEL.get())
+	 			.key('x', Items.APPLE)
+	 			.key('#', Items.STICK)
+	 			.setGroup("candy_apple")
+	 			.addCriterion("has_item", hasItem(ModItems.CARAMEL.get()))
+	 			.build(consumer);
 	}
 }

@@ -1,5 +1,6 @@
 package jurta.jurtaplex.init;
 
+import jurta.jurtaplex.item.LollipopItem;
 import jurta.jurtaplex.item.ModArmorMaterial;
 import jurta.jurtaplex.item.ModToolMaterial;
 import net.minecraft.inventory.EquipmentSlotType;
@@ -14,6 +15,10 @@ import net.minecraftforge.fml.RegistryObject;
 
 public class ModItems {
 	//Foods
+	public static final RegistryObject<Item> CANDY_APPLE = Registration.ITEMS.register("candy_apple", () ->
+			new LollipopItem(new Item.Properties().maxStackSize(1).group(ModTabGroups.JURTAPLEX).food(ModFoods.CANDY_APPLE)));
+	public static final RegistryObject<Item> CARAMEL = Registration.ITEMS.register("caramel", () ->
+			new Item(new Item.Properties().group(ModTabGroups.JURTAPLEX).food(ModFoods.CARAMEL)));
 	public static final RegistryObject<Item> COOKED_FLESH = Registration.ITEMS.register("cooked_flesh", () ->
 			new Item(new Item.Properties().group(ModTabGroups.JURTAPLEX).food(ModFoods.COOKED_FLESH)));
 	//Materials

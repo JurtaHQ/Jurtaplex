@@ -4,6 +4,6 @@
     "item": "minecraft:rotten_flesh"
   },
   "result": "jurtaplex:cooked_flesh",
-  "experience": 0.1,
+  "experience": 0.35,
   "cookingtime": 200
 }

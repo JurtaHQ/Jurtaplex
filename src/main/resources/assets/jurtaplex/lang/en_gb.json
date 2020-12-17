@@ -1,6 +1,11 @@
 {
 	"itemGroup.jurtaplex": "Jurtaplex",
 	
+	"advancements.husbandry.candy_apple.title": "Apples of Love",
+	"advancements.husbandry.candy_apple.description": "Obtain a candy apple",
+	
+	"item.jurtaplex.candy_apple": "Candy Apple",
+	"item.jurtaplex.caramel": "Caramel",
 	"item.jurtaplex.cooked_flesh": "Cooked Flesh",
 	
 	"item.jurtaplex.garnet": "Garnet",
