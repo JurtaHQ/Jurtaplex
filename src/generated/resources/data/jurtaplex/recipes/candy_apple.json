@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "candy_apple",
+  "pattern": [
+    "c",
+    "x",
+    "#"
+  ],
+  "key": {
+    "c": {
+      "item": "jurtaplex:caramel"
+    },
+    "x": {
+      "item": "minecraft:apple"
+    },
+    "#": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "jurtaplex:candy_apple"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=top": {
+      "model": "jurtaplex:block/slate_brick_slab_top"
+    },
+    "type=bottom": {
+      "model": "jurtaplex:block/slate_brick_slab"
+    },
+    "type=double": {
+      "model": "jurtaplex:block/slate_bricks"
+    }
+  }
+}

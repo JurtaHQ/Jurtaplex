@@ -1,6 +1,13 @@
 {
 	"itemGroup.jurtaplex": "\u30B8\u30E5\u30EB\u30BF\u30D7\u30EC\u30C3\u30AF\u30B9",
 	
+	"advancements.husbandry.candy_apple.title": "\u611B\u306E\u308A\u3093\u3054",
+	"advancements.husbandry.candy_apple.description": "\u308A\u3093\u3054\u98F4\u3092\u624B\u306B\u5165\u308C\u308B",
+	
+	"item.jurtaplex.candy_apple": "\u308A\u3093\u3054\u98F4",
+	"item.jurtaplex.caramel": "\u30AD\u30E3\u30E9\u30E1\u30EB",
+	"item.jurtaplex.cooked_flesh": "\u8ABF\u7406\u3057\u305F\u8089",
+	
 	"item.jurtaplex.garnet": "\u67D8\u69B4\u77F3",
 	"item.jurtaplex.amber": "\u7425\u73C0",
 	"item.jurtaplex.aragonite": "\u9730\u77F3",
@@ -29,7 +36,13 @@
 	"block.jurtaplex.limestone_brick_wall": "\u77F3\u7070\u5CA9\u30EC\u30F3\u30AC\u5840",
 	"block.jurtaplex.shale": "\u9801\u5CA9",
 	"block.jurtaplex.slate": "\u7C98\u677F\u5CA9",
+	"block.jurtaplex.slate_slab": "\u7C98\u677F\u5CA9\u30CF\u30FC\u30D5\u30D6\u30ED\u30C3\u30AF",
+	"block.jurtaplex.slate_stairs": "\u7C98\u677F\u5CA9\u968E\u6BB5",
+	"block.jurtaplex.slate_wall": "\u7C98\u677F\u5CA9\u5840",
 	"block.jurtaplex.slate_bricks": "\u7C98\u677F\u5CA9\u30EC\u30F3\u30AC",
+	"block.jurtaplex.slate_brick_slab": "\u7C98\u677F\u5CA9\u30EC\u30F3\u30AC\u30CF\u30FC\u30D5\u30D6\u30ED\u30C3\u30AF",
+	"block.jurtaplex.slate_brick_stairs": "\u7C98\u677F\u5CA9\u30EC\u30F3\u30AC\u968E\u6BB5",
+	"block.jurtaplex.slate_brick_wall": "\u7C98\u677F\u5CA9\u30EC\u30F3\u30AC\u5840",
 	"block.jurtaplex.basanite": "\u30D9\u30A4\u30B5\u30CA\u30A4\u30C8",
 	"block.jurtaplex.basanite_slab": "\u30D9\u30A4\u30B5\u30CA\u30A4\u30C8\u30CF\u30FC\u30D5\u30D6\u30ED\u30C3\u30AF",
 	"block.jurtaplex.basanite_stairs": "\u30D9\u30A4\u30B5\u30CA\u30A4\u30C8\u968E\u6BB5",

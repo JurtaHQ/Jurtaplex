@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "slate_wall",
+  "pattern": [
+    "xxx",
+    "xxx"
+  ],
+  "key": {
+    "x": {
+      "item": "jurtaplex:slate"
+    }
+  },
+  "result": {
+    "item": "jurtaplex:slate_wall",
+    "count": 6
+  }
+}

@@ -1,19 +1,38 @@
 - 0.0.3 (Alpha) -
 
+Blocks
+- Added Slate Stairs
+- Added Slate Slab
+- Added Slate Wall
+- Added Slate Bricks
+- Added Slate Brick Stairs
+- Added Slate Brick Slab
+- Added Slate Brick Wall
+Foods
+- Added Candy Apple
+- Added Caramel
+- Added Cooked Flesh
+Textures
+- Changed up some textures
+
 - 0.0.2 (Alpha) -
 
 Blocks
 - Added Basanite Stairs
 - Added Basanite Slab
+- Added Basanite Wall
 - Added Basanite Bricks
 - Added Basanite Brick Stairs
 - Added Basanite Brick Slab
+- Added Basanite Brick Wall
 - Added Limestone
 - Added Limestone Stairs
 - Added Limestone Slab
+- Added Limestone Wall
 - Added Limestone Bricks
 - Added Limestone Brick Stairs
 - Added Limestone Brick Slab
+- Added Limestone Brick Wall
 - Added Shale
 - Added Slate
 - Added Diopside Ore
